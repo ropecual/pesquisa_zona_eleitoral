@@ -8,6 +8,9 @@ import pandas as pd
 
 from create_df import create_df
 
+
+
+
 # Registrar o tempo de início
 start_time = time()
 
@@ -21,10 +24,10 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option('prefs', prefs)
 
 # Lista de estados para percorrer
-#values = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PI', 'PR', 'RJ',
-#          'RN', 'RO', 'RS', 'SC', 'SE', 'SP', 'TO', 'ZZ']
+values = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PI', 'PR', 'RJ',
+          'RN', 'RO', 'RS', 'SC', 'SE', 'SP', 'TO', 'ZZ']
 
-values = ['AC', 'AL']
+
 
 # Inicia o navegador e vai até a pagina designada
 navegador = webdriver.Chrome(options=options)
