@@ -1,6 +1,6 @@
 from time import sleep
-
-import requests, json
+import requests
+import json
 from geopy import Nominatim
 
 

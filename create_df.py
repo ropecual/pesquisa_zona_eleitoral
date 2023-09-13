@@ -1,5 +1,4 @@
 import os
-from time import sleep
 import pandas as pd
 from lat_lon import get_coordinates
 
