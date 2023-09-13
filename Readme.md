@@ -4,7 +4,7 @@ Esse pequeno repositório realiza uma busca em: https://cad-app-estruturaje.tse.
 
 **O que ele faz?**
 
-1. Ele baixa todos os arquivos referentes a cada estado da federação e a zona internacional;
+1. Ele baixa todos os arquivos referentes a cada estado da federação e a zona internacional, sendo esses: Zona Eleitoral, Endereço, Município, Estado, dentre outros;
 2. Concatena todos os arquivos baixados em um único arquivo e então deleta os desnecessários;
 3. Cria um dataframe e adiciona duas novas colunas ao mesmo: Latitude e Longitude;
 4. Para cada linha, através da API da nomatim: https://nominatim.openstreetmap.org, realiza três verificações para encontrar as coordenadas;
