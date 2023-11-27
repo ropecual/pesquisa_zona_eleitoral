@@ -16,12 +16,11 @@ if __name__ == '__main__':
     # Seta os atributos para o webdriver chrome
     prefs = {'download.default_directory': download_dir}
     options = webdriver.ChromeOptions()
+
     options.add_experimental_option('prefs', prefs)
 
     # Lista de estados para percorrer
-    values = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PI', 'PR',
-              'RJ',
-              'RN', 'RO', 'RS', 'SC', 'SE', 'SP', 'TO', 'ZZ']
+    values = ['AC',]
 
     # Inicia o navegador e vai até a pagina designada
     navegador = webdriver.Chrome(options=options)
@@ -79,4 +78,10 @@ if __name__ == '__main__':
 
     dataframes_totais.to_csv('totais.csv', index=True)
 
-    create_df('totais.csv')
+    print("Lista de Zonas criadas, deseja calcular a latitude e longitude? (isso costuma demorar)")
+    print("[0] Não")
+    print("Qualquer outra Tecla para sim")
+    print("")
+    opcao = input()
+    if opcao != "0":
+       create_df('totais.csv')
